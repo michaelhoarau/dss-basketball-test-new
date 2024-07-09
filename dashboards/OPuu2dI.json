@@ -1,0 +1,62 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1544802354100,
+    "versionNumber": 0
+  },
+  "customFields": {},
+  "listed": false,
+  "name": "Main",
+  "owner": "admin",
+  "pages": [
+    {
+      "enableCrossFilters": true,
+      "filtersParams": {
+        "panelPosition": "TOP"
+      },
+      "grid": {
+        "tiles": [
+          {
+            "autoLoad": true,
+            "box": {
+              "height": 5,
+              "left": 0,
+              "top": 0,
+              "width": 6
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "displayMode": "INSIGHT",
+            "insightId": "lnMRpqr",
+            "insightType": "chart",
+            "resizeImageMode": "FIT_SIZE",
+            "showTitle": "YES",
+            "tileParams": {
+              "autoPlayAnimation": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "showXAxis": true,
+              "showYAxis": true
+            },
+            "tileType": "INSIGHT"
+          }
+        ]
+      },
+      "id": "axtVQGI",
+      "showTitle": false
+    }
+  ],
+  "showGrid": true,
+  "tags": [],
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1555097740676,
+    "versionNumber": 6
+  }
+}

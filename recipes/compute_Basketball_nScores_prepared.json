@@ -1,0 +1,70 @@
+{
+  "type": "spark_sql_query",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "useGlobalMetastore": false,
+    "overwriteOutputSchema": true,
+    "forcePipelinableForTests": false,
+    "readParams": {
+      "map": {
+        "Basketball_nScores": {
+          "repartition": 10,
+          "cache": false
+        }
+      }
+    },
+    "sparkConfig": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "executionEngine": "SPARK_SUBMIT",
+    "pipelineAllowStart": true,
+    "pipelineAllowMerge": true,
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "Basketball_nScores",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "Basketball_nScores_prepared",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 18,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1542073488743
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1541189146193
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

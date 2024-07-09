@@ -1,0 +1,792 @@
+{
+  "computedColumns": [],
+  "enableAutoCastInJoinConditions": false,
+  "engineParams": {
+    "hive": {
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "hiveconf": [],
+      "inheritConf": "default",
+      "skipPrerunValidate": false
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "overwriteOutputSchema": false,
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "sparkConfig": {
+        "conf": [],
+        "inheritConf": "default"
+      },
+      "useGlobalMetastore": false
+    }
+  },
+  "joins": [
+    {
+      "conditionsMode": "AND",
+      "on": [
+        {
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Year",
+            "table": 0
+          },
+          "column2": {
+            "name": "Year",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxDistance": 0,
+          "maxMatches": 1,
+          "normalizeText": false,
+          "strict": false,
+          "type": "EQ"
+        }
+      ],
+      "outerJoinOnTheLeft": true,
+      "rightLimit": {},
+      "table1": 0,
+      "table2": 1,
+      "type": "LEFT"
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Player",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "bigint"
+          },
+          {
+            "name": "Age_min",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Text",
+            "name": "Pos",
+            "type": "string"
+          },
+          {
+            "name": "Age",
+            "type": "bigint"
+          },
+          {
+            "name": "Tm",
+            "type": "string"
+          },
+          {
+            "name": "G",
+            "type": "bigint"
+          },
+          {
+            "name": "Injury",
+            "type": "string"
+          },
+          {
+            "name": "GS",
+            "type": "bigint"
+          },
+          {
+            "name": "MP",
+            "type": "double"
+          },
+          {
+            "name": "FG",
+            "type": "double"
+          },
+          {
+            "name": "FGA",
+            "type": "double"
+          },
+          {
+            "name": "FGP",
+            "type": "double"
+          },
+          {
+            "name": "3P",
+            "type": "double"
+          },
+          {
+            "name": "3PA",
+            "type": "double"
+          },
+          {
+            "name": "3PP",
+            "type": "double"
+          },
+          {
+            "name": "2P",
+            "type": "double"
+          },
+          {
+            "name": "2PA",
+            "type": "double"
+          },
+          {
+            "name": "2PP",
+            "type": "double"
+          },
+          {
+            "name": "EFGP",
+            "type": "double"
+          },
+          {
+            "name": "FT",
+            "type": "double"
+          },
+          {
+            "name": "FTA",
+            "type": "double"
+          },
+          {
+            "name": "FTP",
+            "type": "double"
+          },
+          {
+            "name": "ORB",
+            "type": "double"
+          },
+          {
+            "name": "DRB",
+            "type": "double"
+          },
+          {
+            "name": "TRB",
+            "type": "double"
+          },
+          {
+            "name": "AST",
+            "type": "double"
+          },
+          {
+            "name": "STL",
+            "type": "double"
+          },
+          {
+            "name": "BLK",
+            "type": "double"
+          },
+          {
+            "name": "TO",
+            "type": "double"
+          },
+          {
+            "name": "PF",
+            "type": "double"
+          },
+          {
+            "name": "PTS",
+            "type": "double"
+          },
+          {
+            "name": "Exp",
+            "type": "double"
+          },
+          {
+            "name": "FGP_min",
+            "type": "double"
+          },
+          {
+            "name": "FGP_max",
+            "type": "double"
+          },
+          {
+            "name": "FGP_count",
+            "type": "bigint"
+          },
+          {
+            "name": "FGP_avg",
+            "type": "double"
+          },
+          {
+            "name": "FGP_stddev",
+            "type": "double"
+          },
+          {
+            "name": "3P_min",
+            "type": "double"
+          },
+          {
+            "name": "3P_max",
+            "type": "double"
+          },
+          {
+            "name": "3P_count",
+            "type": "bigint"
+          },
+          {
+            "name": "3P_avg",
+            "type": "double"
+          },
+          {
+            "name": "3P_stddev",
+            "type": "double"
+          },
+          {
+            "name": "FTP_min",
+            "type": "double"
+          },
+          {
+            "name": "FTP_max",
+            "type": "double"
+          },
+          {
+            "name": "FTP_count",
+            "type": "bigint"
+          },
+          {
+            "name": "FTP_avg",
+            "type": "double"
+          },
+          {
+            "name": "FTP_stddev",
+            "type": "double"
+          },
+          {
+            "name": "TRB_min",
+            "type": "double"
+          },
+          {
+            "name": "TRB_max",
+            "type": "double"
+          },
+          {
+            "name": "TRB_count",
+            "type": "bigint"
+          },
+          {
+            "name": "TRB_avg",
+            "type": "double"
+          },
+          {
+            "name": "TRB_stddev",
+            "type": "double"
+          },
+          {
+            "name": "AST_min",
+            "type": "double"
+          },
+          {
+            "name": "AST_max",
+            "type": "double"
+          },
+          {
+            "name": "AST_count",
+            "type": "bigint"
+          },
+          {
+            "name": "AST_avg",
+            "type": "double"
+          },
+          {
+            "name": "AST_stddev",
+            "type": "double"
+          },
+          {
+            "name": "STL_min",
+            "type": "double"
+          },
+          {
+            "name": "STL_max",
+            "type": "double"
+          },
+          {
+            "name": "STL_count",
+            "type": "bigint"
+          },
+          {
+            "name": "STL_avg",
+            "type": "double"
+          },
+          {
+            "name": "STL_stddev",
+            "type": "double"
+          },
+          {
+            "name": "BLK_min",
+            "type": "double"
+          },
+          {
+            "name": "BLK_max",
+            "type": "double"
+          },
+          {
+            "name": "BLK_count",
+            "type": "bigint"
+          },
+          {
+            "name": "BLK_avg",
+            "type": "double"
+          },
+          {
+            "name": "BLK_stddev",
+            "type": "double"
+          },
+          {
+            "name": "TO_min",
+            "type": "double"
+          },
+          {
+            "name": "TO_max",
+            "type": "double"
+          },
+          {
+            "name": "TO_count",
+            "type": "bigint"
+          },
+          {
+            "name": "TO_avg",
+            "type": "double"
+          },
+          {
+            "name": "TO_stddev",
+            "type": "double"
+          },
+          {
+            "name": "PTS_min",
+            "type": "double"
+          },
+          {
+            "name": "PTS_max",
+            "type": "double"
+          },
+          {
+            "name": "PTS_count",
+            "type": "bigint"
+          },
+          {
+            "name": "PTS_avg",
+            "type": "double"
+          },
+          {
+            "name": "PTS_stddev",
+            "type": "double"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "selectedColumns": [
+    {
+      "name": "Player",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "Year",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Age_min",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Pos",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "Age",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Tm",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "G",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Injury",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "GS",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "MP",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "FG",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "FGA",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "FGP",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "3P",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "3PA",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "3PP",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "2P",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "2PA",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "2PP",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "EFGP",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "FT",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "FTA",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "FTP",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "ORB",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "DRB",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "TRB",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "AST",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "STL",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "BLK",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "TO",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "PF",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "PTS",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "Exp",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "FGP_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FGP_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FGP_count",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "FGP_avg",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FGP_stddev",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "3P_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "3P_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "3P_count",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "3P_avg",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "3P_stddev",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FTP_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FTP_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FTP_count",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "FTP_avg",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FTP_stddev",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TRB_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TRB_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TRB_count",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "TRB_avg",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TRB_stddev",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "AST_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "AST_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "AST_count",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "AST_avg",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "AST_stddev",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "STL_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "STL_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "STL_count",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "STL_avg",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "STL_stddev",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "BLK_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "BLK_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "BLK_count",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "BLK_avg",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "BLK_stddev",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TO_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TO_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TO_count",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "TO_avg",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TO_stddev",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "PTS_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "PTS_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "PTS_count",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "PTS_avg",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "PTS_stddev",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "count",
+      "table": 1,
+      "type": "bigint"
+    }
+  ],
+  "virtualInputs": [
+    {
+      "index": 1,
+      "outputColumnsSelectionMode": "MANUAL"
+    },
+    {
+      "index": 0,
+      "outputColumnsSelectionMode": "MANUAL"
+    }
+  ]
+}

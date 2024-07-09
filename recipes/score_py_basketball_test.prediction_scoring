@@ -1,0 +1,38 @@
+{
+    "envSelection": {
+        "envMode": "INHERIT"
+    },
+    "backendType": "PY_MEMORY",
+    "filterInputColumns": false,
+    "keptInputColumns": [],
+    "pythonBatchSize": 100000,
+    "outputProbaPercentiles": false,
+    "outputProbabilities": true,
+    "forceOriginalEngine": false,
+    "forcedClassifierThreshold": 0,
+    "batchSize": 100,
+    "overrideModelSpecifiedThreshold": false,
+    "sparkParams": {
+        "pipelineAllowMerge": true,
+        "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+        "pipelineAllowStart": true,
+        "sparkExecutionEngine": "SPARK_SUBMIT",
+        "sparkConf": {
+            "inheritConf": "default",
+            "conf": []
+        },
+        "sparkRepartitionNonHDFS": 1,
+        "sparkUseGlobalMetastore": false
+    },
+    "gpuConfig": {
+        "params": {
+            "useGpu": true,
+            "gpuList": [
+                0
+            ],
+            "perGPUMemoryFraction": 0.5,
+            "gpuAllowGrowth": false
+        },
+        "disabledCapabilities": []
+    }
+}

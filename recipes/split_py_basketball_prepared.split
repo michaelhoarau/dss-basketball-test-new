@@ -1,0 +1,414 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": 1,
+  "seed": 1337,
+  "randomColumns": [],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "column": "Year",
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "mode": "RANGE",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "Year",
+              "num": 2018,
+              "operator": "\u003c\u003d [number]"
+            }
+          ]
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Player",
+                "type": "string"
+              },
+              {
+                "name": "Exp_x",
+                "type": "string"
+              },
+              {
+                "name": "Year",
+                "type": "bigint"
+              },
+              {
+                "name": "Pos_x",
+                "type": "string"
+              },
+              {
+                "name": "Age_x",
+                "type": "string"
+              },
+              {
+                "name": "Tm_x",
+                "type": "string"
+              },
+              {
+                "name": "G_x",
+                "type": "string"
+              },
+              {
+                "name": "Injury_x",
+                "type": "string"
+              },
+              {
+                "name": "GS_x",
+                "type": "string"
+              },
+              {
+                "name": "MP_x",
+                "type": "string"
+              },
+              {
+                "name": "FGP_x",
+                "type": "string"
+              },
+              {
+                "name": "3P_x",
+                "type": "string"
+              },
+              {
+                "name": "FTP_x",
+                "type": "string"
+              },
+              {
+                "name": "TRB_x",
+                "type": "string"
+              },
+              {
+                "name": "AST_x",
+                "type": "string"
+              },
+              {
+                "name": "STL_x",
+                "type": "string"
+              },
+              {
+                "name": "BLK_x",
+                "type": "string"
+              },
+              {
+                "name": "TO_x",
+                "type": "string"
+              },
+              {
+                "name": "PTS_x",
+                "type": "string"
+              },
+              {
+                "name": "zFG_x",
+                "type": "string"
+              },
+              {
+                "name": "zFT_x",
+                "type": "string"
+              },
+              {
+                "name": "z3P_x",
+                "type": "string"
+              },
+              {
+                "name": "zTRB_x",
+                "type": "string"
+              },
+              {
+                "name": "zAST_x",
+                "type": "string"
+              },
+              {
+                "name": "zSTL_x",
+                "type": "string"
+              },
+              {
+                "name": "zBLK_x",
+                "type": "string"
+              },
+              {
+                "name": "zTO_x",
+                "type": "string"
+              },
+              {
+                "name": "zPTS_x",
+                "type": "string"
+              },
+              {
+                "name": "zTOT_x",
+                "type": "string"
+              },
+              {
+                "name": "nFG_x",
+                "type": "string"
+              },
+              {
+                "name": "nFT_x",
+                "type": "string"
+              },
+              {
+                "name": "n3P_x",
+                "type": "string"
+              },
+              {
+                "name": "nTRB_x",
+                "type": "string"
+              },
+              {
+                "name": "nAST_x",
+                "type": "string"
+              },
+              {
+                "name": "nSTL_x",
+                "type": "string"
+              },
+              {
+                "name": "nBLK_x",
+                "type": "string"
+              },
+              {
+                "name": "nTO_x",
+                "type": "string"
+              },
+              {
+                "name": "nPTS_x",
+                "type": "string"
+              },
+              {
+                "name": "nTot_x",
+                "type": "string"
+              },
+              {
+                "name": "Exp_y",
+                "type": "double"
+              },
+              {
+                "name": "Pos_y",
+                "type": "string"
+              },
+              {
+                "name": "Age_y",
+                "type": "double"
+              },
+              {
+                "name": "Tm_y",
+                "type": "string"
+              },
+              {
+                "name": "G_y",
+                "type": "double"
+              },
+              {
+                "name": "Injury_y",
+                "type": "string"
+              },
+              {
+                "name": "GS_y",
+                "type": "double"
+              },
+              {
+                "name": "MP_y",
+                "type": "double"
+              },
+              {
+                "name": "FGP_y",
+                "type": "double"
+              },
+              {
+                "name": "3P_y",
+                "type": "double"
+              },
+              {
+                "name": "FTP_y",
+                "type": "double"
+              },
+              {
+                "name": "TRB_y",
+                "type": "double"
+              },
+              {
+                "name": "AST_y",
+                "type": "double"
+              },
+              {
+                "name": "STL_y",
+                "type": "double"
+              },
+              {
+                "name": "BLK_y",
+                "type": "double"
+              },
+              {
+                "name": "TO_y",
+                "type": "double"
+              },
+              {
+                "name": "PTS_y",
+                "type": "double"
+              },
+              {
+                "name": "zFG_y",
+                "type": "double"
+              },
+              {
+                "name": "zFT_y",
+                "type": "double"
+              },
+              {
+                "name": "z3P_y",
+                "type": "double"
+              },
+              {
+                "name": "zTRB_y",
+                "type": "double"
+              },
+              {
+                "name": "zAST_y",
+                "type": "double"
+              },
+              {
+                "name": "zSTL_y",
+                "type": "double"
+              },
+              {
+                "name": "zBLK_y",
+                "type": "double"
+              },
+              {
+                "name": "zTO_y",
+                "type": "double"
+              },
+              {
+                "name": "zPTS_y",
+                "type": "double"
+              },
+              {
+                "name": "zTOT_y",
+                "type": "double"
+              },
+              {
+                "name": "nFG_y",
+                "type": "double"
+              },
+              {
+                "name": "nFT_y",
+                "type": "double"
+              },
+              {
+                "name": "n3P_y",
+                "type": "double"
+              },
+              {
+                "name": "nTRB_y",
+                "type": "double"
+              },
+              {
+                "name": "nAST_y",
+                "type": "double"
+              },
+              {
+                "name": "nSTL_y",
+                "type": "double"
+              },
+              {
+                "name": "nBLK_y",
+                "type": "double"
+              },
+              {
+                "name": "nTO_y",
+                "type": "double"
+              },
+              {
+                "name": "nPTS_y",
+                "type": "double"
+              },
+              {
+                "name": "nTot_y",
+                "type": "double"
+              },
+              {
+                "name": "Tm_Switch",
+                "type": "boolean"
+              }
+            ]
+          }
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ]
+}

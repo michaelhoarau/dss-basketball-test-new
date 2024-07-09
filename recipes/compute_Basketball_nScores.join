@@ -1,0 +1,542 @@
+{
+  "computedColumns": [],
+  "enableAutoCastInJoinConditions": false,
+  "engineParams": {
+    "hive": {
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "hiveconf": [],
+      "inheritConf": "default",
+      "skipPrerunValidate": false
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "overwriteOutputSchema": false,
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "sparkConfig": {
+        "conf": [],
+        "inheritConf": "default"
+      },
+      "useGlobalMetastore": false
+    }
+  },
+  "joins": [
+    {
+      "conditionsMode": "AND",
+      "on": [
+        {
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Year",
+            "table": 0
+          },
+          "column2": {
+            "name": "Year",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxDistance": 0,
+          "maxMatches": 1,
+          "normalizeText": false,
+          "strict": false,
+          "type": "EQ"
+        }
+      ],
+      "outerJoinOnTheLeft": true,
+      "table1": 0,
+      "table2": 1,
+      "type": "LEFT"
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Player",
+            "type": "string"
+          },
+          {
+            "name": "Exp",
+            "type": "bigint"
+          },
+          {
+            "name": "Year",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Text",
+            "name": "Pos",
+            "type": "string"
+          },
+          {
+            "name": "Age",
+            "type": "bigint"
+          },
+          {
+            "name": "Tm",
+            "type": "string"
+          },
+          {
+            "name": "G",
+            "type": "bigint"
+          },
+          {
+            "name": "Injury",
+            "type": "string"
+          },
+          {
+            "name": "GS",
+            "type": "bigint"
+          },
+          {
+            "name": "MP",
+            "type": "double"
+          },
+          {
+            "name": "FGP",
+            "type": "double"
+          },
+          {
+            "name": "3P",
+            "type": "double"
+          },
+          {
+            "name": "FTP",
+            "type": "double"
+          },
+          {
+            "name": "TRB",
+            "type": "double"
+          },
+          {
+            "name": "AST",
+            "type": "double"
+          },
+          {
+            "name": "STL",
+            "type": "double"
+          },
+          {
+            "name": "BLK",
+            "type": "double"
+          },
+          {
+            "name": "TO",
+            "type": "double"
+          },
+          {
+            "name": "PTS",
+            "type": "double"
+          },
+          {
+            "name": "zFG",
+            "type": "double"
+          },
+          {
+            "name": "zFT",
+            "type": "double"
+          },
+          {
+            "name": "z3P",
+            "type": "double"
+          },
+          {
+            "name": "zTRB",
+            "type": "double"
+          },
+          {
+            "name": "zAST",
+            "type": "double"
+          },
+          {
+            "name": "zSTL",
+            "type": "double"
+          },
+          {
+            "name": "zBLK",
+            "type": "double"
+          },
+          {
+            "name": "zTO",
+            "type": "double"
+          },
+          {
+            "name": "zPTS",
+            "type": "double"
+          },
+          {
+            "name": "zTOT",
+            "type": "double"
+          },
+          {
+            "name": "zFG_min",
+            "type": "double"
+          },
+          {
+            "name": "zFG_max",
+            "type": "double"
+          },
+          {
+            "name": "zFT_min",
+            "type": "double"
+          },
+          {
+            "name": "zFT_max",
+            "type": "double"
+          },
+          {
+            "name": "z3P_min",
+            "type": "double"
+          },
+          {
+            "name": "z3P_max",
+            "type": "double"
+          },
+          {
+            "name": "zTRB_min",
+            "type": "double"
+          },
+          {
+            "name": "zTRB_max",
+            "type": "double"
+          },
+          {
+            "name": "zAST_min",
+            "type": "double"
+          },
+          {
+            "name": "zAST_max",
+            "type": "double"
+          },
+          {
+            "name": "zSTL_min",
+            "type": "double"
+          },
+          {
+            "name": "zSTL_max",
+            "type": "double"
+          },
+          {
+            "name": "zBLK_min",
+            "type": "double"
+          },
+          {
+            "name": "zBLK_max",
+            "type": "double"
+          },
+          {
+            "name": "zTO_min",
+            "type": "double"
+          },
+          {
+            "name": "zTO_max",
+            "type": "double"
+          },
+          {
+            "name": "zPTS_min",
+            "type": "double"
+          },
+          {
+            "name": "zPTS_max",
+            "type": "double"
+          },
+          {
+            "name": "zTOT_min",
+            "type": "double"
+          },
+          {
+            "name": "zTOT_max",
+            "type": "double"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "selectedColumns": [
+    {
+      "name": "Player",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "Exp",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Year",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Pos",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "Age",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Tm",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "G",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Injury",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "GS",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "MP",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "FGP",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "3P",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "FTP",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "TRB",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "AST",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "STL",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "BLK",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "TO",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "PTS",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zFG",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zFT",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "z3P",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zTRB",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zAST",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zSTL",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zBLK",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zTO",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zPTS",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zTOT",
+      "table": 0,
+      "type": "double"
+    },
+    {
+      "name": "zFG_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zFG_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zFT_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zFT_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "z3P_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "z3P_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zTRB_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zTRB_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zAST_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zAST_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zSTL_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zSTL_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zBLK_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zBLK_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zTO_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zTO_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zPTS_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zPTS_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zTOT_min",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "zTOT_max",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "count",
+      "table": 1,
+      "type": "bigint"
+    }
+  ],
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "computedColumns": [],
+      "index": 0,
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "computedColumns": [],
+      "index": 1,
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "Year",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "stddev": false,
+      "first": false
+    }
+  ],
+  "values": [
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Player",
+      "count": false,
+      "$idx": 0,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Pos",
+      "count": false,
+      "$idx": 1,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Age",
+      "count": false,
+      "$idx": 2,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Tm",
+      "count": false,
+      "$idx": 3,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "G",
+      "count": false,
+      "$idx": 4,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "GS",
+      "count": false,
+      "$idx": 5,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "MP",
+      "count": false,
+      "$idx": 6,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "FGP",
+      "count": false,
+      "$idx": 7,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "3P",
+      "count": false,
+      "$idx": 8,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "FTP",
+      "count": false,
+      "$idx": 9,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "TRB",
+      "count": false,
+      "$idx": 10,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "AST",
+      "count": false,
+      "$idx": 11,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "STL",
+      "count": false,
+      "$idx": 12,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "BLK",
+      "count": false,
+      "$idx": 13,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "TO",
+      "count": false,
+      "$idx": 14,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "PTS",
+      "count": false,
+      "$idx": 15,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "zFG",
+      "count": false,
+      "$idx": 16,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "zFT",
+      "count": false,
+      "$idx": 17,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "z3P",
+      "count": false,
+      "$idx": 18,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "zTRB",
+      "count": false,
+      "$idx": 19,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "zAST",
+      "count": false,
+      "$idx": 20,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "zSTL",
+      "count": false,
+      "$idx": 21,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "zBLK",
+      "count": false,
+      "$idx": 22,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "zTO",
+      "count": false,
+      "$idx": 23,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "zPTS",
+      "count": false,
+      "$idx": 24,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "zTOT",
+      "count": false,
+      "$idx": 25,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": false
+    }
+  ],
+  "globalCount": true,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Year",
+            "type": "bigint"
+          },
+          {
+            "name": "zFG_min",
+            "type": "double"
+          },
+          {
+            "name": "zFG_max",
+            "type": "double"
+          },
+          {
+            "name": "zFT_min",
+            "type": "double"
+          },
+          {
+            "name": "zFT_max",
+            "type": "double"
+          },
+          {
+            "name": "z3P_min",
+            "type": "double"
+          },
+          {
+            "name": "z3P_max",
+            "type": "double"
+          },
+          {
+            "name": "zTRB_min",
+            "type": "double"
+          },
+          {
+            "name": "zTRB_max",
+            "type": "double"
+          },
+          {
+            "name": "zAST_min",
+            "type": "double"
+          },
+          {
+            "name": "zAST_max",
+            "type": "double"
+          },
+          {
+            "name": "zSTL_min",
+            "type": "double"
+          },
+          {
+            "name": "zSTL_max",
+            "type": "double"
+          },
+          {
+            "name": "zBLK_min",
+            "type": "double"
+          },
+          {
+            "name": "zBLK_max",
+            "type": "double"
+          },
+          {
+            "name": "zTO_min",
+            "type": "double"
+          },
+          {
+            "name": "zTO_max",
+            "type": "double"
+          },
+          {
+            "name": "zPTS_min",
+            "type": "double"
+          },
+          {
+            "name": "zPTS_max",
+            "type": "double"
+          },
+          {
+            "name": "zTOT_min",
+            "type": "double"
+          },
+          {
+            "name": "zTOT_max",
+            "type": "double"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  }
+}

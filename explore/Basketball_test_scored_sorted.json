@@ -1,0 +1,231 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "SELECT",
+      "list": [
+        {
+          "name": "Player",
+          "d": true
+        },
+        {
+          "name": "Exp",
+          "d": false
+        },
+        {
+          "name": "Year",
+          "d": true
+        },
+        {
+          "name": "Pos",
+          "d": false
+        },
+        {
+          "name": "Age",
+          "d": false
+        },
+        {
+          "name": "Tm",
+          "d": false
+        },
+        {
+          "name": "G",
+          "d": false
+        },
+        {
+          "name": "Injury",
+          "d": false
+        },
+        {
+          "name": "GS",
+          "d": false
+        },
+        {
+          "name": "MP",
+          "d": false
+        },
+        {
+          "name": "FGP",
+          "d": false
+        },
+        {
+          "name": "3P",
+          "d": false
+        },
+        {
+          "name": "FTP",
+          "d": false
+        },
+        {
+          "name": "TRB",
+          "d": false
+        },
+        {
+          "name": "AST",
+          "d": false
+        },
+        {
+          "name": "STL",
+          "d": false
+        },
+        {
+          "name": "BLK",
+          "d": false
+        },
+        {
+          "name": "TO",
+          "d": false
+        },
+        {
+          "name": "PTS",
+          "d": false
+        },
+        {
+          "name": "zFG",
+          "d": false
+        },
+        {
+          "name": "zFT",
+          "d": false
+        },
+        {
+          "name": "z3P",
+          "d": false
+        },
+        {
+          "name": "zTRB",
+          "d": false
+        },
+        {
+          "name": "zAST",
+          "d": false
+        },
+        {
+          "name": "zSTL",
+          "d": false
+        },
+        {
+          "name": "zBLK",
+          "d": false
+        },
+        {
+          "name": "zTO",
+          "d": false
+        },
+        {
+          "name": "zPTS",
+          "d": false
+        },
+        {
+          "name": "zTOT",
+          "d": true
+        },
+        {
+          "name": "nFG",
+          "d": false
+        },
+        {
+          "name": "nFT",
+          "d": false
+        },
+        {
+          "name": "n3P",
+          "d": false
+        },
+        {
+          "name": "nTRB",
+          "d": false
+        },
+        {
+          "name": "nAST",
+          "d": false
+        },
+        {
+          "name": "nSTL",
+          "d": false
+        },
+        {
+          "name": "nBLK",
+          "d": false
+        },
+        {
+          "name": "nTO",
+          "d": false
+        },
+        {
+          "name": "nPTS",
+          "d": false
+        },
+        {
+          "name": "nTot",
+          "d": false
+        },
+        {
+          "name": "zTOTP1",
+          "d": false
+        },
+        {
+          "name": "Tm_Switch",
+          "d": false
+        },
+        {
+          "name": "prediction",
+          "d": true
+        },
+        {
+          "name": "_row_number",
+          "d": true
+        },
+        {
+          "name": "_rank",
+          "d": true
+        },
+        {
+          "name": "_dense_rank",
+          "d": true
+        }
+      ]
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

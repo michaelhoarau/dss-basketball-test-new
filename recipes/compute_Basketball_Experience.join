@@ -1,0 +1,425 @@
+{
+  "computedColumns": [
+    {
+      "expr": "Age-Age_min",
+      "mode": "GREL",
+      "name": "Exp",
+      "type": "double"
+    }
+  ],
+  "enableAutoCastInJoinConditions": false,
+  "engineParams": {
+    "hive": {
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "hiveconf": [],
+      "inheritConf": "default",
+      "skipPrerunValidate": false
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "overwriteOutputSchema": false,
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "sparkConfig": {
+        "conf": [],
+        "inheritConf": "default"
+      },
+      "useGlobalMetastore": false
+    }
+  },
+  "joins": [
+    {
+      "conditionsMode": "AND",
+      "on": [
+        {
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Player",
+            "table": 0
+          },
+          "column2": {
+            "name": "Player",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxDistance": 0,
+          "maxMatches": 1,
+          "normalizeText": false,
+          "strict": false,
+          "type": "EQ"
+        }
+      ],
+      "outerJoinOnTheLeft": true,
+      "table1": 0,
+      "table2": 1,
+      "type": "LEFT"
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "fullyTranslated": false,
+      "message": "Filter expression is invalid",
+      "ok": false,
+      "schema": {
+        "columns": [
+          {
+            "name": "Player",
+            "type": "string"
+          },
+          {
+            "name": "1980_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "Age_min",
+            "type": "bigint"
+          },
+          {
+            "name": "Year",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Text",
+            "name": "Pos",
+            "type": "string"
+          },
+          {
+            "name": "Age",
+            "type": "bigint"
+          },
+          {
+            "name": "Tm",
+            "type": "string"
+          },
+          {
+            "name": "has_TOT",
+            "type": "bigint"
+          },
+          {
+            "name": "G",
+            "type": "bigint"
+          },
+          {
+            "name": "Injury",
+            "type": "string"
+          },
+          {
+            "name": "GS",
+            "type": "bigint"
+          },
+          {
+            "name": "MP",
+            "type": "double"
+          },
+          {
+            "name": "FG",
+            "type": "double"
+          },
+          {
+            "name": "FGA",
+            "type": "double"
+          },
+          {
+            "name": "FGP",
+            "type": "double"
+          },
+          {
+            "name": "3P",
+            "type": "double"
+          },
+          {
+            "name": "3PA",
+            "type": "double"
+          },
+          {
+            "name": "3PP",
+            "type": "double"
+          },
+          {
+            "name": "2P",
+            "type": "double"
+          },
+          {
+            "name": "2PA",
+            "type": "double"
+          },
+          {
+            "name": "2PP",
+            "type": "double"
+          },
+          {
+            "name": "EFGP",
+            "type": "double"
+          },
+          {
+            "name": "FT",
+            "type": "double"
+          },
+          {
+            "name": "FTA",
+            "type": "double"
+          },
+          {
+            "name": "FTP",
+            "type": "double"
+          },
+          {
+            "name": "ORB",
+            "type": "double"
+          },
+          {
+            "name": "DRB",
+            "type": "double"
+          },
+          {
+            "name": "TRB",
+            "type": "double"
+          },
+          {
+            "name": "AST",
+            "type": "double"
+          },
+          {
+            "name": "STL",
+            "type": "double"
+          },
+          {
+            "name": "BLK",
+            "type": "double"
+          },
+          {
+            "name": "TO",
+            "type": "double"
+          },
+          {
+            "name": "PF",
+            "type": "double"
+          },
+          {
+            "name": "PTS",
+            "type": "double"
+          },
+          {
+            "name": "Exp",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      },
+      "validated": true
+    },
+    "enabled": true,
+    "uiData": {
+      "conditions": [
+        {
+          "col": "Player",
+          "input": "1980_sum",
+          "num": 0,
+          "operator": "== [number]"
+        }
+      ],
+      "mode": "&&"
+    }
+  },
+  "selectedColumns": [
+    {
+      "name": "Player",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "1980_sum",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Age_min",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Year",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "Pos",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "Age",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "Tm",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "has_TOT",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "G",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "Injury",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "GS",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "MP",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FG",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FGA",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FGP",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "3P",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "3PA",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "3PP",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "2P",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "2PA",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "2PP",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "EFGP",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FT",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FTA",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "FTP",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "ORB",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "DRB",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TRB",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "AST",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "STL",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "BLK",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "TO",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "PF",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "PTS",
+      "table": 1,
+      "type": "double"
+    }
+  ],
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "computedColumns": [],
+      "index": 0,
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "computedColumns": [],
+      "index": 1,
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      }
+    }
+  ]
+}

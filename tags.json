@@ -1,0 +1,16 @@
+{
+  "tags": {
+    "duplicated": {
+      "color": "#3A85AD"
+    },
+    "deleted-recipe-editor": {
+      "color": "#90a8b7"
+    },
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
+    "imported": {
+      "color": "#263238"
+    }
+  }
+}

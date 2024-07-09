@@ -1,0 +1,88 @@
+{
+  "charts": [],
+  "script": {
+    "analysisColumnData": {},
+    "coloring": {
+      "individualColumns": [],
+      "scheme": "MEANING_AND_STATUS",
+      "valueColoringMode": "HASH"
+    },
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "explorationFilters": [
+      {
+        "active": true,
+        "alphanumFilter": {
+          "column": "Year",
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          },
+          "selectedValues": [],
+          "type": "alphanum"
+        },
+        "column": "Year",
+        "currentMode": "FACET",
+        "facet": {
+          "column": "Year",
+          "columnType": "NUMERICAL",
+          "currentMode": "NUMERICAL",
+          "selectedValues": {},
+          "sort": "count",
+          "type": "facet"
+        },
+        "type": "columnFilter",
+        "validityFilter": {
+          "column": "Year",
+          "params": {
+            "empty": true,
+            "nok": true,
+            "ok": true,
+            "type": "LongMeaning"
+          },
+          "type": "validity"
+        }
+      }
+    ],
+    "explorationSampling": {
+      "_refreshTrigger": 2,
+      "autoRefreshSample": false,
+      "selection": {
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxReadUncompressedBytes": -1,
+        "maxRecords": 100000,
+        "maxStoredBytes": 104857600,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02,
+        "withinFirstN": -1
+      }
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "maxProcessedMemTableBytes": -1,
+    "previewMode": "ALL_ROWS",
+    "sorting": [
+      {
+        "ascending": true,
+        "column": "Year"
+      }
+    ],
+    "steps": [],
+    "vizSampling": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false
+    }
+  }
+}

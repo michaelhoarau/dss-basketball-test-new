@@ -1,0 +1,485 @@
+{
+    "type": "Filesystem",
+    "managed": true,
+    "formatType": "csv",
+    "checklists": {
+        "checklists": []
+    },
+    "checks": [],
+    "customMeta": {
+        "kv": {}
+    },
+    "flowOptions": {
+        "virtualizable": false,
+        "rebuildBehavior": "NORMAL",
+        "crossProjectBuildBehavior": "DEFAULT"
+    },
+    "readWriteOptions": {
+        "preserveOrder": false,
+        "writeBuckets": 1,
+        "forceSingleOutputFile": false,
+        "defaultReadOrdering": {
+            "enabled": false,
+            "rules": []
+        }
+    },
+    "formatParams": {
+        "style": "unix",
+        "charset": "utf8",
+        "separator": "\t",
+        "quoteChar": "\"",
+        "escapeChar": "\\",
+        "dateSerializationFormat": "ISO",
+        "arrayMapFormat": "json",
+        "hiveSeparators": [
+            "\u0002",
+            "\u0003",
+            "\u0004",
+            "\u0005",
+            "\u0006",
+            "\u0007",
+            "\b"
+        ],
+        "skipRowsBeforeHeader": 0,
+        "parseHeaderRow": false,
+        "skipRowsAfterHeader": 0,
+        "probableNumberOfRecords": 0,
+        "normalizeBooleans": false,
+        "normalizeDoubles": true,
+        "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+        "readMissingColumnsBehavior": "DISCARD_SILENT",
+        "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+        "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+        "fileReadFailureBehavior": "FAIL",
+        "compress": "gz"
+    },
+    "partitioning": {
+        "ignoreNonMatchingFile": false,
+        "considerMissingRequestedPartitionsAsEmpty": false,
+        "dimensions": []
+    },
+    "versionTag": {
+        "versionNumber": 6,
+        "lastModifiedBy": {
+            "login": "admin"
+        },
+        "lastModifiedOn": 1541193076496
+    },
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "jordan"
+        },
+        "lastModifiedOn": 1541177873101
+    },
+    "tags": [],
+    "params": {
+        "connection": "filesystem_managed",
+        "path": "${projectKey}/Basketball_Raw_Data_prepared_joined",
+        "notReadyIfEmpty": false,
+        "filesSelectionRules": {
+            "mode": "ALL",
+            "excludeRules": [],
+            "includeRules": [],
+            "explicitFiles": []
+        }
+    },
+    "schema": {
+        "columns": [
+            {
+                "name": "Player",
+                "type": "string"
+            },
+            {
+                "name": "Year",
+                "type": "bigint"
+            },
+            {
+                "name": "Age_min",
+                "type": "bigint"
+            },
+            {
+                "name": "Pos",
+                "type": "string",
+                "meaning": "Text"
+            },
+            {
+                "name": "Age",
+                "type": "bigint"
+            },
+            {
+                "name": "Tm",
+                "type": "string"
+            },
+            {
+                "name": "G",
+                "type": "bigint"
+            },
+            {
+                "name": "Injury",
+                "type": "string"
+            },
+            {
+                "name": "GS",
+                "type": "bigint"
+            },
+            {
+                "name": "MP",
+                "type": "double"
+            },
+            {
+                "name": "FG",
+                "type": "double"
+            },
+            {
+                "name": "FGA",
+                "type": "double"
+            },
+            {
+                "name": "FGP",
+                "type": "double"
+            },
+            {
+                "name": "3P",
+                "type": "double"
+            },
+            {
+                "name": "3PA",
+                "type": "double"
+            },
+            {
+                "name": "3PP",
+                "type": "double"
+            },
+            {
+                "name": "2P",
+                "type": "double"
+            },
+            {
+                "name": "2PA",
+                "type": "double"
+            },
+            {
+                "name": "2PP",
+                "type": "double"
+            },
+            {
+                "name": "EFGP",
+                "type": "double"
+            },
+            {
+                "name": "FT",
+                "type": "double"
+            },
+            {
+                "name": "FTA",
+                "type": "double"
+            },
+            {
+                "name": "FTP",
+                "type": "double"
+            },
+            {
+                "name": "ORB",
+                "type": "double"
+            },
+            {
+                "name": "DRB",
+                "type": "double"
+            },
+            {
+                "name": "TRB",
+                "type": "double"
+            },
+            {
+                "name": "AST",
+                "type": "double"
+            },
+            {
+                "name": "STL",
+                "type": "double"
+            },
+            {
+                "name": "BLK",
+                "type": "double"
+            },
+            {
+                "name": "TO",
+                "type": "double"
+            },
+            {
+                "name": "PF",
+                "type": "double"
+            },
+            {
+                "name": "PTS",
+                "type": "double"
+            },
+            {
+                "name": "Exp",
+                "type": "double"
+            },
+            {
+                "name": "FGP_min",
+                "type": "double"
+            },
+            {
+                "name": "FGP_max",
+                "type": "double"
+            },
+            {
+                "name": "FGP_count",
+                "type": "bigint"
+            },
+            {
+                "name": "FGP_avg",
+                "type": "double"
+            },
+            {
+                "name": "FGP_stddev",
+                "type": "double"
+            },
+            {
+                "name": "3P_min",
+                "type": "double"
+            },
+            {
+                "name": "3P_max",
+                "type": "double"
+            },
+            {
+                "name": "3P_count",
+                "type": "bigint"
+            },
+            {
+                "name": "3P_avg",
+                "type": "double"
+            },
+            {
+                "name": "3P_stddev",
+                "type": "double"
+            },
+            {
+                "name": "FTP_min",
+                "type": "double"
+            },
+            {
+                "name": "FTP_max",
+                "type": "double"
+            },
+            {
+                "name": "FTP_count",
+                "type": "bigint"
+            },
+            {
+                "name": "FTP_avg",
+                "type": "double"
+            },
+            {
+                "name": "FTP_stddev",
+                "type": "double"
+            },
+            {
+                "name": "TRB_min",
+                "type": "double"
+            },
+            {
+                "name": "TRB_max",
+                "type": "double"
+            },
+            {
+                "name": "TRB_count",
+                "type": "bigint"
+            },
+            {
+                "name": "TRB_avg",
+                "type": "double"
+            },
+            {
+                "name": "TRB_stddev",
+                "type": "double"
+            },
+            {
+                "name": "AST_min",
+                "type": "double"
+            },
+            {
+                "name": "AST_max",
+                "type": "double"
+            },
+            {
+                "name": "AST_count",
+                "type": "bigint"
+            },
+            {
+                "name": "AST_avg",
+                "type": "double"
+            },
+            {
+                "name": "AST_stddev",
+                "type": "double"
+            },
+            {
+                "name": "STL_min",
+                "type": "double"
+            },
+            {
+                "name": "STL_max",
+                "type": "double"
+            },
+            {
+                "name": "STL_count",
+                "type": "bigint"
+            },
+            {
+                "name": "STL_avg",
+                "type": "double"
+            },
+            {
+                "name": "STL_stddev",
+                "type": "double"
+            },
+            {
+                "name": "BLK_min",
+                "type": "double"
+            },
+            {
+                "name": "BLK_max",
+                "type": "double"
+            },
+            {
+                "name": "BLK_count",
+                "type": "bigint"
+            },
+            {
+                "name": "BLK_avg",
+                "type": "double"
+            },
+            {
+                "name": "BLK_stddev",
+                "type": "double"
+            },
+            {
+                "name": "TO_min",
+                "type": "double"
+            },
+            {
+                "name": "TO_max",
+                "type": "double"
+            },
+            {
+                "name": "TO_count",
+                "type": "bigint"
+            },
+            {
+                "name": "TO_avg",
+                "type": "double"
+            },
+            {
+                "name": "TO_stddev",
+                "type": "double"
+            },
+            {
+                "name": "PTS_min",
+                "type": "double"
+            },
+            {
+                "name": "PTS_max",
+                "type": "double"
+            },
+            {
+                "name": "PTS_count",
+                "type": "bigint"
+            },
+            {
+                "name": "PTS_avg",
+                "type": "double"
+            },
+            {
+                "name": "PTS_stddev",
+                "type": "double"
+            },
+            {
+                "name": "count",
+                "type": "bigint"
+            }
+        ],
+        "userModified": true
+    },
+    "metrics": {
+        "probes": [
+            {
+                "type": "basic",
+                "enabled": true,
+                "computeOnBuildMode": "PARTITION",
+                "meta": {
+                    "name": "Basic data",
+                    "level": 0
+                },
+                "configuration": {}
+            },
+            {
+                "type": "records",
+                "enabled": true,
+                "computeOnBuildMode": "NO",
+                "meta": {
+                    "name": "Record count",
+                    "level": 0
+                },
+                "configuration": {}
+            }
+        ],
+        "engineConfig": {
+            "padRunsWithMetrics": false,
+            "hive": {
+                "active": true,
+                "extraConf": []
+            },
+            "basic": {},
+            "dss": {
+                "active": true,
+                "selection": {
+                    "useMemTable": false,
+                    "filter": {
+                        "distinct": false,
+                        "enabled": false
+                    },
+                    "partitionSelectionMethod": "ALL",
+                    "latestPartitionsN": 1,
+                    "ordering": {
+                        "enabled": false,
+                        "rules": []
+                    },
+                    "samplingMethod": "FULL",
+                    "maxRecords": -1,
+                    "targetRatio": 0.02,
+                    "withinFirstN": -1,
+                    "maxReadUncompressedBytes": -1
+                }
+            },
+            "sql": {
+                "active": true
+            },
+            "impala": {
+                "active": true
+            },
+            "python": {}
+        },
+        "displayedState": {
+            "columns": [],
+            "metrics": [
+                "basic:COUNT_COLUMNS",
+                "basic:COUNT_FILES",
+                "basic:SIZE",
+                "records:COUNT_RECORDS"
+            ]
+        }
+    },
+    "metricsChecks": {
+        "checks": [],
+        "displayedState": {
+            "checks": []
+        },
+        "monitor": false
+    }
+}

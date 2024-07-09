@@ -1,0 +1,274 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": 1,
+  "seed": 1337,
+  "randomColumns": [],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "column": "Year",
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "mode": "RANGE",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "Year",
+              "num": 0,
+              "operator": "\u003e\u003d [number]"
+            },
+            {
+              "input": "Year",
+              "num": 2017,
+              "operator": "\u003c\u003d [number]"
+            }
+          ]
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Player",
+                "type": "string"
+              },
+              {
+                "name": "Exp",
+                "type": "bigint"
+              },
+              {
+                "name": "Year",
+                "type": "bigint"
+              },
+              {
+                "name": "Pos",
+                "type": "string"
+              },
+              {
+                "name": "Age",
+                "type": "bigint"
+              },
+              {
+                "name": "Tm",
+                "type": "string"
+              },
+              {
+                "name": "G",
+                "type": "bigint"
+              },
+              {
+                "name": "Injury",
+                "type": "string"
+              },
+              {
+                "name": "GS",
+                "type": "bigint"
+              },
+              {
+                "name": "MP",
+                "type": "double"
+              },
+              {
+                "name": "FGP",
+                "type": "double"
+              },
+              {
+                "name": "3P",
+                "type": "double"
+              },
+              {
+                "name": "FTP",
+                "type": "double"
+              },
+              {
+                "name": "TRB",
+                "type": "double"
+              },
+              {
+                "name": "AST",
+                "type": "double"
+              },
+              {
+                "name": "STL",
+                "type": "double"
+              },
+              {
+                "name": "BLK",
+                "type": "double"
+              },
+              {
+                "name": "TO",
+                "type": "double"
+              },
+              {
+                "name": "PTS",
+                "type": "double"
+              },
+              {
+                "name": "zFG",
+                "type": "double"
+              },
+              {
+                "name": "zFT",
+                "type": "double"
+              },
+              {
+                "name": "z3P",
+                "type": "double"
+              },
+              {
+                "name": "zTRB",
+                "type": "double"
+              },
+              {
+                "name": "zAST",
+                "type": "double"
+              },
+              {
+                "name": "zSTL",
+                "type": "double"
+              },
+              {
+                "name": "zBLK",
+                "type": "double"
+              },
+              {
+                "name": "zTO",
+                "type": "double"
+              },
+              {
+                "name": "zPTS",
+                "type": "double"
+              },
+              {
+                "name": "zTOT",
+                "type": "double"
+              },
+              {
+                "name": "nFG",
+                "type": "double"
+              },
+              {
+                "name": "nFT",
+                "type": "double"
+              },
+              {
+                "name": "n3P",
+                "type": "double"
+              },
+              {
+                "name": "nTRB",
+                "type": "double"
+              },
+              {
+                "name": "nAST",
+                "type": "double"
+              },
+              {
+                "name": "nSTL",
+                "type": "double"
+              },
+              {
+                "name": "nBLK",
+                "type": "double"
+              },
+              {
+                "name": "nTO",
+                "type": "double"
+              },
+              {
+                "name": "nPTS",
+                "type": "double"
+              },
+              {
+                "name": "nTot",
+                "type": "double"
+              },
+              {
+                "name": "zTOTP1",
+                "type": "double"
+              },
+              {
+                "name": "Tm_Switch",
+                "type": "boolean"
+              }
+            ]
+          }
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ]
+}

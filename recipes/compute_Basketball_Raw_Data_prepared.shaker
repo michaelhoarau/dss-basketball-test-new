@@ -1,0 +1,524 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "col_0",
+            "to": "Year"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "col_1"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "col_2",
+            "to": "Player"
+          },
+          {
+            "from": "col_3",
+            "to": "Pos"
+          },
+          {
+            "from": "col_4",
+            "to": "Age"
+          },
+          {
+            "from": "col_5",
+            "to": "Tm"
+          },
+          {
+            "from": "col_6",
+            "to": "G"
+          },
+          {
+            "from": "col_7",
+            "to": "GS"
+          },
+          {
+            "from": "col_8",
+            "to": "MP"
+          },
+          {
+            "from": "col_9",
+            "to": "FG"
+          },
+          {
+            "from": "col_10",
+            "to": "FGA"
+          },
+          {
+            "from": "col_11",
+            "to": "FGP"
+          },
+          {
+            "from": "col_12",
+            "to": "3P"
+          },
+          {
+            "from": "col_13",
+            "to": "3PA"
+          },
+          {
+            "from": "col_14",
+            "to": "3PP"
+          },
+          {
+            "from": "col_15",
+            "to": "2P"
+          },
+          {
+            "from": "col_16",
+            "to": "2PA"
+          },
+          {
+            "from": "col_17",
+            "to": "2PP"
+          },
+          {
+            "from": "col_18",
+            "to": "EFGP"
+          },
+          {
+            "from": "col_19",
+            "to": "FT"
+          },
+          {
+            "from": "col_20",
+            "to": "FTA"
+          },
+          {
+            "from": "col_21",
+            "to": "FTP"
+          },
+          {
+            "from": "col_22",
+            "to": "ORB"
+          },
+          {
+            "from": "col_23",
+            "to": "DRB"
+          },
+          {
+            "from": "col_24",
+            "to": "TRB"
+          },
+          {
+            "from": "col_25",
+            "to": "AST"
+          },
+          {
+            "from": "col_26",
+            "to": "STL"
+          },
+          {
+            "from": "col_27",
+            "to": "BLK"
+          },
+          {
+            "from": "col_28",
+            "to": "TO"
+          },
+          {
+            "from": "col_29",
+            "to": "PF"
+          },
+          {
+            "from": "col_30",
+            "to": "PTS"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 1
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "Year",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": "(",
+        "outColPrefix": "Year_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Year"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Year_0",
+            "to": "Year"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 1
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "PTS",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": ")",
+        "outColPrefix": "PTS_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "PTS"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "PTS_0",
+            "to": "PTS"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnBadType",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "Age"
+        ],
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "type": "LongMeaning"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 2
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "Player",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": "\\",
+        "outColPrefix": "Player_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Player",
+          "Player_1"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Player_0",
+            "to": "Player"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "TextSimplifierProcessor",
+      "params": {
+        "inCol": "Player",
+        "sortAlphabetically": false,
+        "normalize": true,
+        "language": "english",
+        "clearStopWords": false,
+        "stem": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "GS"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "FGP"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "3PP"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "2PP"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "EFGP"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "FTP"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(Year\u003d\u003d1980,1,0)",
+        "column": "1980"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(Tm\u003d\u003d\"TOT\",1,0)",
+        "column": "has_TOT"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if (G\u003e75, \"None\",if (G\u003e60, \"Minor\", if (G\u003e40, \"Intermediate\",\"Major\")))",
+        "column": "Injury"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "PTS/2",
+        "column": "pts2"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "col_30": {
+      "meaning": "Text"
+    },
+    "col_3": {
+      "meaning": "Text"
+    },
+    "col_0": {
+      "meaning": "Text"
+    }
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
