@@ -54,7 +54,10 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"Exp","type":"bigint","originalType":"int8"},
+      {"name":"avg","type":"double","originalType":"float8"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
