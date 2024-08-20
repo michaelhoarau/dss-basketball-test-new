@@ -2,14 +2,6 @@
   "type": "step_based",
   "name": "Monthly Job Log Cleanup",
   "active": false,
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1724163505890,
-    "extendedProperties": {}
-  },
   "checklists": {
     "checklists": []
   },
@@ -19,10 +11,57 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "0oGbSoUE",
+      "type": "temporal",
+      "name": "Monthly Trigger",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Monthly",
+        "startingFrom": "2024-08-20",
+        "daysOfWeek": [
+          "Tuesday"
+        ],
+        "monthlyRunOn": "ON_THE_DAY",
+        "minute": 18,
+        "hour": 16,
+        "timezone": "SERVER",
+        "lastUpdate": 1724163652096
+      }
+    }
+  ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_clear-job-logs",
+        "type": "runnable",
+        "name": "Clean Logs",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_clear-job-logs",
+          "config": {
+            "age": 30,
+            "performDeletion": true
+          },
+          "adminConfig": {
+            "allProjects": true
+          },
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
