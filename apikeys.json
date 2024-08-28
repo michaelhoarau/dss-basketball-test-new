@@ -50,7 +50,168 @@
   },
   {
     "execSQLLike": false,
-    "localDatasets": [],
+    "localDatasets": [
+      {
+        "datasets": [
+          "Basketball_EXP_TM"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_Experience"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_Experience_by_Player"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_Raw_Data"
+        ],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      },
+      {
+        "datasets": [
+          "Basketball_Raw_Data_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_Raw_Data_prepared_by_Player"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_Raw_Data_prepared_by_Year"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_Raw_Data_prepared_joined"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_nScores"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_nScores_by_Age"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_nScores_by_Exp"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_nScores_copy"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_nScores_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_test"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_test_scored"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_test_scored_sorted"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_train"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_zScores"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_zScores_agg_by_year"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Basketball_zScores_nScores_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "basketball_avgztot_by_exp"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "py_basketball_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "py_basketball_test"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "py_basketball_test_scored"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "py_basketball_test_scored_sorted"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "py_basketball_train"
+        ],
+        "privileges": []
+      }
+    ],
     "projectPrivileges": {
       "admin": false,
       "readProjectContent": false,
