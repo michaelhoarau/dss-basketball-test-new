@@ -1,0 +1,20 @@
+{
+  "name": "Code-Studio-Test",
+  "libName": "Code-Studio-Test",
+  "templateId": "Test-Template",
+  "params": {},
+  "owner": "admin",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1725010384933,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
