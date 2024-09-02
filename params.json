@@ -194,7 +194,7 @@
     },
     "dkuProperties": []
   },
-  "name": "Basketball",
+  "name": "Basketball-New",
   "imgPattern": 6,
   "metrics": {
     "probes": [],
@@ -259,7 +259,7 @@
     "lastModifiedOn": 1541172752632,
     "extendedProperties": {}
   },
-  "shortDesc": "The project *Basketball* was created by jordan on Nov 02nd 2018\nThe project *BASKETBALL_COPY* was copied from *BASKETBALL* by Administrator on May 24th 2019",
+  "shortDesc": "The project *Basketball* was created by jordan on Nov 02nd 2018\nThe project *BASKETBALL_COPY* was copied from *BASKETBALL* by Administrator on May 24th 2019\nThe project *BASKETBALLNEW* was copied from *BASKETBALLv2* by Administrator on Sep 02nd 2024",
   "tags": [
     "duplicated",
     "imported"
