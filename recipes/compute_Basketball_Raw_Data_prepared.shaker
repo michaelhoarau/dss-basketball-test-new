@@ -5,19 +5,22 @@
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
-      "filter": {
-        "distinct": false,
-        "enabled": false
-      },
       "latestPartitionsN": 1,
       "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
       "ordering": {
         "rules": [],
         "enabled": false
       },
       "withinFirstN": -1,
-      "partitionSelectionMethod": "ALL",
       "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
       "targetRatio": 0.02,
       "maxReadUncompressedBytes": -1,
       "samplingMethod": "HEAD_SEQUENTIAL"
@@ -25,6 +28,7 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
+  "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -230,7 +234,7 @@
         "renamings": [
           {
             "from": "Year_0",
-            "to": "Year"
+            "to": "Year1"
           }
         ]
       },
@@ -501,6 +505,25 @@
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
     "autoRefreshSample": false
   },
   "analysisColumnData": {
@@ -514,11 +537,49 @@
       "meaning": "Text"
     }
   },
+  "columnWidthsByName": {
+    "BLK": 134,
+    "FG": 134,
+    "FTP": 134,
+    "TRB": 134,
+    "Injury": 100,
+    "G": 100,
+    "STL": 134,
+    "FT": 134,
+    "PTS": 134,
+    "pts2": 134,
+    "Tm": 100,
+    "has_TOT": 100,
+    "Age": 100,
+    "2P": 134,
+    "FGA": 134,
+    "Year1": 100,
+    "Player": 183,
+    "AST": 134,
+    "MP": 134,
+    "2PA": 134,
+    "3PA": 134,
+    "EFGP": 134,
+    "GS": 100,
+    "FGP": 134,
+    "2PP": 134,
+    "FTA": 134,
+    "3PP": 134,
+    "Year": 100,
+    "Pos": 100,
+    "DRB": 134,
+    "PF": 134,
+    "1980": 100,
+    "TO": 134,
+    "3P": 134,
+    "ORB": 134
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
-    "valueColoringMode": "HASH"
+    "valueColoringMode": "HASH",
+    "individualColumnsRules": []
   }
 }

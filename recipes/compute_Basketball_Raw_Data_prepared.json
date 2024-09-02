@@ -5,27 +5,28 @@
   "params": {
     "engineParams": {
       "spark": {
-        "pipelineAllowStart": true,
-        "pipelineAllowMerge": true,
+        "readParams": {
+          "mode": "AUTO",
+          "autoModeRepartitionInto": 10,
+          "map": {
+            "Basketball_Raw_Data": {
+              "repartition": 10
+            },
+            "BasketballStats": {
+              "repartition": 1
+            }
+          }
+        },
+        "useGlobalMetastore": false,
+        "useNativeProcessors": true,
         "sparkConfig": {
           "inheritConf": "default",
           "conf": []
         },
         "executionEngine": "SPARK_SUBMIT",
-        "readParams": {
-          "map": {
-            "Basketball_Raw_Data": {
-              "repartition": 10,
-              "cache": false
-            },
-            "BasketballStats": {
-              "repartition": 1,
-              "cache": false
-            }
-          }
-        },
-        "useGlobalMetastore": false,
-        "useNativeProcessors": true
+        "pipelineAllowStart": true,
+        "pipelineAllowMerge": true,
+        "skipPrerunValidate": false
       },
       "hive": {
         "inheritConf": "default",
@@ -38,7 +39,14 @@
         "forceStreamMode": true
       },
       "hadoopConfigKeys": [],
-      "maxThreads": 8
+      "sqlPipelineParams": {
+        "pipelineAllowStart": true,
+        "pipelineAllowMerge": true
+      },
+      "maxThreads": 8,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
     }
   },
   "customMeta": {
@@ -46,6 +54,8 @@
   },
   "redispatchPartitioning": false,
   "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
   "inputs": {
     "main": {
       "items": [
@@ -66,19 +76,14 @@
       ]
     }
   },
-  "versionTag": {
-    "versionNumber": 17,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1553711858767
-  },
+  "labels": [],
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "jordan"
     },
-    "lastModifiedOn": 1541174453624
+    "lastModifiedOn": 1541174453624,
+    "extendedProperties": {}
   },
   "tags": [],
   "customFields": {},
