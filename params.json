@@ -61,7 +61,7 @@
       "exportForeignObjectsReferences": true
     }
   },
-  "owner": "data-scientist",
+  "owner": "admin",
   "permissionsVersion": "LEGACY",
   "permissions": [],
   "additionalDashboardUsers": {

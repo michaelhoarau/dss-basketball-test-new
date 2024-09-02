@@ -2,14 +2,7 @@
   "type": "custom_python",
   "name": "Webapp backend cleanup",
   "active": false,
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1724847745635,
-    "extendedProperties": {}
-  },
+  "runAsUser": "admin",
   "checklists": {
     "checklists": []
   },

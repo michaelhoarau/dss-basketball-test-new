@@ -2,7 +2,7 @@
   "type": "step_based",
   "name": "Score New Data",
   "active": false,
-  "runAsUser": "data-scientist",
+  "runAsUser": "admin",
   "checklists": {
     "checklists": []
   },

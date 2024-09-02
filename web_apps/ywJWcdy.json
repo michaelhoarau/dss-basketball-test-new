@@ -14,6 +14,7 @@
       "jquery",
       "dataiku"
     ],
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -41,7 +42,7 @@
   },
   "config": {},
   "name": "test",
-  "apiKey": "yniLKeMg7vvu28zTuiwmgxh6k4v5NNlu",
+  "apiKey": "OZZxPag4Uzr8Fn88ylStz4KS84Fu3DaL",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
