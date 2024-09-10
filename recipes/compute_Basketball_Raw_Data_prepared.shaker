@@ -234,7 +234,7 @@
         "renamings": [
           {
             "from": "Year_0",
-            "to": "Year1"
+            "to": "Year2"
           }
         ]
       },
@@ -552,6 +552,7 @@
     "has_TOT": 100,
     "Age": 100,
     "2P": 134,
+    "Year2": 100,
     "FGA": 134,
     "Year1": 100,
     "Player": 183,
